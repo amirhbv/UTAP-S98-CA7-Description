@@ -128,6 +128,49 @@
 			همچنین هنگامی که کاربری یک ناشر را دنبال می‌کند باید برای آن ناشر پیغامی  ارسال شود.
 			\commandFormat{commands/customerFollow.in.txt}{commands/customerFollow.out.txt}
 
+		\subsubsection{افزایش اعتبار}
+			هر مشتری می‌تواند حساب خود را شارژ کند و اعتبار خود را افزایش دهد.
+			\commandFormat{commands/customerMoney.in.txt}{commands/customerMoney.out.txt}
+
+		\subsubsection{جستجو}
+			هر مشتری می‌تواند توسط دستور زیر بین تمامی فیلم‌ها جستجو انجام دهد.
+			در صورتی که یک دشته برای جستجو دریافت ‌شود، باید در میان نام فیلم‌ها و نام کارگردان‌ها این رشته  را جستجو کند و نتیجه را نمایش دهد.
+			در غیر این صورت باید ۱۰ فیلم جدیدی که به شبکه اضافه شده را نمایش دهد.
+			\commandFormat{commands/search.in.txt}{commands/search.out.txt}
+
+		\subsubsection{مشاهده جزییات فیلم}
+			هر مشتری می‌تواند توسط دستور زیر یک فیلم را انتخاب کند و جزییات آن‌ را ببیند.
+			همچنین در این قسمت پس از جزییات باید نظرهایی که برای آن فیلم گذاشته شده و پاسخ‌هایی که آن نظرات دریافت کرده‌اند را نمایش داده شود.
+			در  انتهای این قسمت ۴ فیلم که بالاترین امتیاز را در میان فیلم‌های شبکه دارند پس از نمایش جزییات فیلم مذکور به نمایش در می‌آید.
+			اگر امتیاز آن‌ها برابر بود بر اساس ترتیب اضافه شدن باید در خروجی چاپ شوند.
+			توجه کنید که این فیلم‌ها نباید جزو فیلم‌هایی باشد که این کاربر قبلا خریداری کرده است.
+			\commandFormat{commands/customerFilmDetails.in.txt}{commands/customerFilmDetails.out.txt}
+
+		\subsubsection{خرید فیلم}
+			هر مشتری می‌تواند هزینه‌ یک فیلم را پرداخت کند و آن را بخرد.
+			این هزینه مستقیما به دارایی شبکه‌ی مجازی اضافه خواهد شد.
+			\commandFormat{commands/buyFilm.in.txt}{commands/buyFilm.out.txt}
+
+		\subsubsection{امتیازدهی به فیلم‌ها}
+			هر مشتری می‌تواند به فیلم‌هایی که خریداری کرده است، توسط دستور زیر از بین ۱ تا ۱۰ به آن امتیاز دهد.
+			امتیاز هر فیلم از میانگین امتیازاتی که مشتری‌ها به آن‌ها می‌دهند، محاسبه می‌شود.
+			پس از هر امتیاز دادن پیغامی حاوی این امتیاز به ناشر آن فیلم ارسال می‌شود.
+			\commandFormat{commands/rateFilm.in.txt}{commands/rateFilm.out.txt}
+
+		\subsubsection{نظر دادن به فیلم‌ها}
+			هر مشتری می‌تواند به فیلم‌هایی که خریداری کرده است، توسط دستور زیر نظر\LTRfootnote{comment} خود را برای فیلم ثبت کند..
+			پس از هر نظر دادن پیغامی حاوی این نظر به ناشر ارسال می‌شود.
+			\commandFormat{commands/customerComment.in.txt}{commands/customerComment.out.txt}
+
+		\subsubsection{مشاهده لیست فیلم‌های خریداری شده}
+			هر مشتری می‌تواند لیست فیلم‌هایی که خریداری کرده است را مشاهده کند.
+			\commandFormat{commands/customerFilmList.in.txt}{commands/customerFilmList.out.txt}
+
+		\subsubsection{مشاهده لیست پیغام‌ها}
+			هر مشتری می‌تواند لیست پیغام‌هایی که برای او ارسال شده است را توسط این دستور مشاهده کند.
+			توجه کنید که این پیغام‌ها باید به ترتیب زمان ارسال باشند و جدید‌ترین پیغام بالاتر باشد.
+			\commandFormat{commands/customerNotifs.in.txt}{commands/customerNotifs.out.txt}
+
 	\section{نکات پایانی}
 		\begin{itemize}
 			\item
