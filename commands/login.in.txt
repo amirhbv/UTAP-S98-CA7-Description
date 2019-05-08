@@ -1,1 +1,1 @@
-login
+POST login username <username> password <password>

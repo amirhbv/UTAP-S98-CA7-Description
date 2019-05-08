@@ -1,1 +1,1 @@
-getFilms
+GET films ? [name <name>] [min_year <min_year>] [max_year <max_year>] [director <director>]

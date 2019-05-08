@@ -1,1 +1,1 @@
-filmDetails
+GET films ? id <id>

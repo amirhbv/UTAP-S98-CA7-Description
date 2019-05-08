@@ -1,1 +1,1 @@
-getMoney
+GET money

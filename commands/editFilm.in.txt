@@ -1,1 +1,1 @@
-editFilm
+PUT films ? id <id> [name <name>] [year <year>] [length <length>] [summary <summary>] [director <director>]

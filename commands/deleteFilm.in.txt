@@ -1,1 +1,1 @@
-deleteFilm
+DELETE films id <id>
