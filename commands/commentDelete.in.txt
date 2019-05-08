@@ -1,1 +1,1 @@
-salam
+DELETE /comments ? film_id
