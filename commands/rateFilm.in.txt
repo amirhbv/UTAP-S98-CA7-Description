@@ -1,1 +1,1 @@
-NA
+POST rate ? film_id <film_id> score <score>

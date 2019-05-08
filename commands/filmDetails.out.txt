@@ -1,1 +1,19 @@
-salam
+Details of Film <film_name>
+Id = <film_id>
+Director = <film_director>
+Length = <film_length>
+Year = <film_year>
+Summary = <film_summary>
+rate = <rate>
+price = <price>
+
+Comments
+<comment-Id>. <comment_message>
+<comment-id>.1. <reply_message>
+
+Recommendation Film
+#. Film Id | Film Name | Film Length | Film Director
+1. <film_id> | <film_name> | <film_length> | <film_director>
+2. <film_id> | <film_name> | <film_length> | <film_director>
+3. <film_id> | <film_name> | <film_length> | <film_director>
+4. <film_id> | <film_name> | <film_length> | <film_director>

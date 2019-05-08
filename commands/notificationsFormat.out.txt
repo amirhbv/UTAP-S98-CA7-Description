@@ -1,0 +1,6 @@
+1. Publisher <publisher_name> with id <publisher_id> reply to your comment.
+2. Publisher <publisher_name> with id <publisher_id> register new film.
+3. User <user_name> with id <user_id> follow you.
+4. User <user_name> with id <user_id> buy your film <film_name> with id <film_id>.
+5. User <user_name> with id <user_id> rate your film <film_name> with id <film_id>.
+6. User <user_name> with id <user_id> comment on your film <film_name with id <film_id>.

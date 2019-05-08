@@ -1,1 +1,1 @@
-NA
+GET purchased ? [name <name>] [price <price>] [min_year <min_year>] [max_year <max_year>] [director <director>]

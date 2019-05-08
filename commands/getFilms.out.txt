@@ -1,1 +1,7 @@
-
+#. Film Id | Film Name | Film Length | Film price | rate | Production Year | Film Director
+1. <film_id> | <film_name> | <film_length> | <Film price> | <rate> | <Production Year> | <film_director>
+2. <film_id> | <film_name> | <film_length> | <Film price> | <rate> | <Production Year> | <film_director>
+.
+.
+.
+#n. <film_id> | <film_name> | <film_length> | <Film price> | <rate> | <Production Year> | <film_director>

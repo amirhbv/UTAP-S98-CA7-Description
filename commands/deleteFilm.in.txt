@@ -1,1 +1,1 @@
-DELETE films id <id>
+DELETE films ? film_id <film_id>

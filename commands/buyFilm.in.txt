@@ -1,1 +1,1 @@
-POST buy film_id <film_id>
+POST buy ? film_id <film_id>
