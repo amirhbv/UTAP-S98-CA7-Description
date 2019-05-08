@@ -110,7 +110,7 @@
 در هنگام پرداخت پول توسط کاربر بر اساس اینکه فیلم در کدام یک از حالت‌های بالا باشد، مقداری از آن به ناشر تعلق می‌گیرد و باقی آن در حساب شبکه باقی می‌ماند. 
 هر ناشر برای فیلم خود در حالت ضعیف باید۸۰ درصد، در حالت متوسط ۹۰ درصد و در حالت قوی ۹۵ درصد از مبلغ را از شبکه دریافت کند.
 توجه کنید که میزان پرداخت به ناشر دقیقا به امتیاز فیلم در لحظه‌ی خرید بستگی دارد. یعنی اگر در هنگام دریافت پول امتیاز فیلم تغییر کرده بود، میزان پول دریافتی تغییری نمی‌کند و تنها امتیاز فیلم در هنگام خرید مبنای محاسبه‌ی دریافتی‌ها است.
-\commandFormat{commands/getMoney.in.txt}{commands/getMoney.out.txt}
+\commandFormat{commands/withdrawMoney.in.txt}{commands/withdrawMoney.out.txt}
 
 		\subsubsection{مشاهده‌ی لیست فیلم‌ها}
 			هر ناشر می‌تواند با دستور زیر فیلم‌هایی را که خودش در سایت قرار داده است مشاهده کند.
@@ -118,11 +118,11 @@
 
 		\subsubsection{پاسخ دادن به نظرات}
 			هر ناشر می‌تواند به نظراتی که به فیلم‌هایش داده شده پاسخ دهد.
-			\commandFormat{commands/commentReply.in.txt}{commands/commentReply.out.txt}
+			\commandFormat{commands/addReply.in.txt}{commands/addReply.out.txt}
 
 		\subsubsection{حذف کردن نظرات}
 			هر ناشر می‌تواند نظراتی را که به فیلم‌هایش داده شده حذف کند.
-			\commandFormat{commands/commentDelete.in.txt}{commands/commentDelete.out.txt}
+			\commandFormat{commands/deleteComment.in.txt}{commands/deleteComment.out.txt}
 			
 	\subsection{مشتریان}
 		تا این جا با قابلیت‌هایی که تنها ناشر می‌تواند انجام دهد، آشنا شدیم.
@@ -138,7 +138,7 @@
 		
 		\subsubsection{اضافه کردن اعتبار}
 		هر مشتری می‌تواند حساب خود را شارژ کند و پول خود را افزایش دهد.
-			\commandFormat{commands/customerFollow.in.txt}{commands/customerFollow.out.txt}
+			\commandFormat{commands/addMoney.in.txt}{commands/addMoney.out.txt}
 			
 		\subsubsection{جستجو}
 		هر مشتری می‌تواند توسط دستور زیر بین تمامی فیلم‌ها جستجو انجام دهد. در این دستور ممکن است هر ویژگی از ویژگی‌های فیلم قرار گیرد که در صورت وجود باید فیلم‌ها برآن اساس فیلتر شود. در صورت وجود چند ویژگی باید نتایج نهایی شامل تمامی فیلتر‌های خواسته شده باشد.
@@ -150,11 +150,11 @@
 		
 		\subsubsection{خرید فیلم}
 		هر مشتری می‌تواند توسط دستور زیر پس از پرداخت هزینه‌ی یک فیلم آن را خریداری کند. این هزینه مستقیما به دارایی شبکه‌ی مجازی اضافه خواهد شد.
-			\commandFormat{commands/filmDetails.in.txt}{commands/filmDetails.out.txt}
+			\commandFormat{commands/buyFilm.in.txt}{commands/buyFilm.out.txt}
 			
 		\subsubsection{دادن امتیاز به فیلم}
 		هر مشتری می‌تواند پس از آن‌ که فیلمی را خرید توسط دستور زیر بین ۱ تا ۱۰ به آن امتیاز دهد. امتیاز هر فیلم از میانگین امتیازاتی که مشتری‌ها به آن‌ها می‌دهند، محاسبه می‌شود. پس از هر امتیاز دادن پیغامی حاوی این پیام به ناشر آن فیلم ارسال می‌شود.
-			\commandFormat{commands/filmDetails.in.txt}{commands/filmDetails.out.txt}
+			\commandFormat{commands/rateFilm.in.txt}{commands/rateFilm.out.txt}
 	
 		\subsubsection{نظر دادن به فیلم‌ها}
 		هر مشتری می‌تواند پس از آن ‌که فیلمی را خرید نظر خود را زیر آن فیلم ثبت کند. پس از هر نظر دادن پیغامی حاوی این پیام به ناشر ارسال می‌شود. 
@@ -162,23 +162,37 @@
 		توجه کنید که هر نظر دارای یک شناسه‌ی 
 		\textbf{عددی یکتا}
 		 است که این شناسه برای هر فیلم به صورت جداگانه از عدد یک شروع می‌شود. این شناسه به طور خودکار در هنگام اضافه شدن نظر به آن تعلق می‌گیرد.
-		\commandFormat{commands/filmDetails.in.txt}{commands/filmDetails.out.txt}	
+		\commandFormat{commands/addComment.in.txt}{commands/addComment.out.txt}	
 		
 		\subsubsection{مشاهده‌ی لیست فیلم‌های خریداری شده}
 		هر مشتری می‌تواند لیست فیلم‌هایی که خریداری کرده است را مشاهده کند. این لیست باید بر حسب شناسه‌ی فیلم‌ها مرتب شده باشد.
-		\commandFormat{commands/filmDetails.in.txt}{commands/filmDetails.out.txt}	
+		\commandFormat{commands/getPurchasedFilms.in.txt}{commands/getPurchasedFilms.out.txt}	
 		
 		\subsubsection{مشاهده‌ی لیست پیغام‌های خوانده نشده}
 		هر مشتری می‌تواند لیست پیغام‌هایی که در زمان عدم حضور او در حساب کاربری ارسال شده است را توسط این دستور مشاهده کند. پس از آن‌ که هر فرد پیغام‌های نخوانده شده‌ی خود را مشاهده کرد این پیغام‌ها از آن لیست پیغام‌های خوانده شده، حذف می‌شود.
 		
 		این لیست باید به ترتیب رسیدن پیغام‌ها مرتب شده باشد. یعنی جدیدترین پیغام باید در اول لیست نشان داده شود.
-		\commandFormat{commands/filmDetails.in.txt}{commands/filmDetails.out.txt}	
+		\commandFormat{commands/getUnreadNotifications.in.txt}{commands/getUnreadNotifications.out.txt}	
 		
 		\subsubsection{مشاهده‌ی لیست همه‌ی پیغام‌ها}
 		در این قسمت هر کاربر می‌تواند بین تمامی پیغام‌هایی که تا به حال برای او آمده است را مشاهده کند. این پیغام‌ها فقط شامل پیغام‌های خوانده شده است. همچنین در این قسمت حدی برای مشاهده‌ی پیغام‌ها وجود دارد که باید تا آن تعداد پیغام به نمایش درآید.
 		
 		توجه کنید که مانند بالا این لیست باید به ترتیب رسیدن پیغام‌ها مرتب شده باشد. یعنی جدیدترین پیغام باید در اول لیست نشان داده شود.
-		\commandFormat{commands/filmDetails.in.txt}{commands/filmDetails.out.txt}	
+		\commandFormat{commands/getNotifications.in.txt}{commands/getNotifications.out.txt}	
+		
+	\section{بخش امتیازی}
+		\subsection{git}
+		در این پروژه، برای کسب امتیاز بیشتر، در سایت github\LTRfootnote{github.com}
+		 عضو شده و یک مخزن\LTRfootnote{repository}
+		 خصوصی\LTRfootnote{private}
+		 جدید ایجاد کنید. سپس، فایل‌هایی را که برای پروژەی خود ساختەاید روی git بگذارید. پس از اعمال هر تغییر، فایل جدید را با پیامی مناسب که نشانگر تغییرات اعمال شده در این نسخه نسبت به نسخەی قبلی است commit و سپس push کنید. همەی \lr{commit}ها را روی شاخه‌ی \LTRfootnote{branch}اصلی\LTRfootnote{master}
+push
+	کنید. توجه کنید که هر commit باید تنها شامل یک تغییر باشد.
+		دقت کنید که در هنگام تحویل ارتکاب‌ها/کامیت‌های شما بررسی می‌شود و تنها در صورت استفاده بهینه و درست از git نمرەی امتیازی آن به شما تعلق می‌گیرد. یعنی تنها ساختن یک مخزن و پوش کردن پروژه در آن نمرەای نخواهد داشت.
+		\subsection{هش‌کردن رمزعبور}
+		همان‌طور که می‌دانید رمزعبور ویژگی‌ای است که افراد تمایل دارند از دسترسی سایرین حفظ شود. به این دلیل است که هنگام ذخیره‌سازی رمز عبور آن را به صورت خام در حافظه نگهداری نمی‌کنند. هش\LTRfootnote{hash} کردن روشی که توسط آن می‌توان یک رشته را به رشته‌ی دیگری تبدیل کرد که این فرآیند غیرقابل بازگشت است. یعنی هش هر رشته یک رشته‌ی یکتا است که با هر رشته‌ی دیگر تفاوت دارد و از طریق هش یک رشته نمی‌توان به آن رشته دسترسی پیدا کرد.
+		
+		در این قسمت قصد داریم، رمز‌های عبور افراد را به صورت هش شده در حافظه نگهداری کنیم تا از دسترسی به رمز عبور خام پرهیز شود. هش کردن الگوریتم‌های متفاوتی دارد که می‌توانید در اینترنت درباره‌ی آن‌ها جستجو کنید.
 
 	\section{نکات پایانی}
 		\begin{itemize}
