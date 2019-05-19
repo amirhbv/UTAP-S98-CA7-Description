@@ -1,0 +1,8 @@
+List of Followers
+#. User Id  | User Username | User Email
+1. <user_id> | <user_username> | <user_email>
+2. <user_id> | <user_username> | <user_email>
+.
+.
+.
+#n. <user_id> | <user_username> | <user_email>

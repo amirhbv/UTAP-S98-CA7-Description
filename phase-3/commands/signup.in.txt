@@ -1,0 +1,1 @@
+POST signup ? email <email> username <username> password <password> age <age> [publisher <true|false>]
