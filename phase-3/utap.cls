@@ -10,10 +10,8 @@
 \RequirePackage{graphicx}
 \RequirePackage{geometry}
 \RequirePackage{tikz}
-\RequirePackage{tikzscale}
 \RequirePackage{tocbibind}
 \RequirePackage{listings}
-\RequirePackage[exponent-to-prefix]{siunitx}
 \RequirePackage{fontspec}
 \RequirePackage[normalem]{ulem}
 \RequirePackage{array}
